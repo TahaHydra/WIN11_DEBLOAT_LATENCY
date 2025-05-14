@@ -168,6 +168,43 @@ This README explains what each step in the optimization script does, what issues
 * Turn off `Allow downloads from other PCs`
 
 These are **not yet in the script**, but can significantly improve latency and should be considered in the next update.
+17. Set Reserved CPU Set for Gaming
+
+Purpose: Reserve best performing CPU cores for games.
+Manual Fix:
+
+Download and run ReservedCpuSet.exe manually.
+
+Select the target app/game executable.
+Script Behavior: Downloads ReservedCpuSet.exe and opens it for configuration.
+
+18. Disable Xbox Game Bar
+
+Purpose: Frees up resources and reduces background input processing.
+Manual Fix:
+
+Settings > Gaming > Xbox Game Bar > Disable
+Script Behavior: Modifies registry to disable Game Bar.
+
+19. Optimize Network Stack (TCP tweaks)
+
+Purpose: Reduce input latency and improve packet handling.
+Manual Fix:
+
+Modify TCP parameters in registry (TcpAckFrequency, TCPNoDelay, etc.).
+Script Behavior: Automatically sets these registry tweaks.
+
+20. Disable Telemetry and Tracking
+
+Purpose: Reduce background CPU, disk, and network usage from Windows tracking.
+Manual Fix:
+
+Settings > Privacy > Diagnostics & Feedback > Send required only
+
+Or use a privacy tool like O&O ShutUp10++
+Script Behavior: Debloater + registry disables telemetry services.
+
+
 
 ---
 
